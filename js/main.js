@@ -23,7 +23,7 @@ const app = new Vue ({
             this.lista.splice(i , 1)
         },
         addToDo: function(){
-            this.lista.push(this.inputValue);
+            this.lista.push({text:this.inputValue, done:false});
             this.inputValue = '';
         },
         
