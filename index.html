@@ -36,6 +36,7 @@
             <li
               v-for="(item , index) in lista"
               :class="item.done == true ? 'sbarrato' : ''"
+              @click="change(index)"
             >
               <span> {{item.text}} </span>
               <!-- fare la spesa-->

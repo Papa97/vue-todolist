@@ -26,6 +26,13 @@ const app = new Vue ({
             this.lista.push({text:this.inputValue, done:false});
             this.inputValue = '';
         },
+        change: function(i){
+            if (this.lista[i].done === false){
+                this.lista[i].done = true;
+            } else {
+                this.lista[i].done = false;
+            }
+        }
         
 
     }
