@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  height: 75px;
+}
+
+.container {
+  max-width: 75%;
+  margin: auto;
+}
+
+.container div {
+  margin: 50px 0;
+}
+
+.container ul {
+  list-style: none;
+}
+
+.container ul li {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container ul li:not(:last-child) {
+  border-bottom: 1px solid #ccc;
+}
+
+.sbarrato {
+  text-decoration: line-through;
+}
+
+.add-to-do input {
+  padding: 5px;
+  border: none;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 40px;
+  width: 190px;
+}
+
+.add-to-do button {
+  border: none;
+  background-color: #00e165;
+  padding: 0 10px;
+  color: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  height: 40px;
+  cursor: pointer;
+}
+
+li i {
+  cursor: pointer;
+}
+
+li i:hover {
+  color: red;
+}
