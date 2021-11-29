@@ -20,11 +20,15 @@ const app = new Vue ({
 
     methods: {
         removeToDo: function(i){
+
             this.lista.splice(i , 1)
         },
         addToDo: function(){
-            this.lista.push({text:this.inputValue, done:false});
-            this.inputValue = '';
+            if (this.inputValue !== ''){
+                this.lista.push({text:this.inputValue, done:false});
+                this.inputValue = '';
+            }
+
         },
         change: function(i){
             if (this.lista[i].done === false){
