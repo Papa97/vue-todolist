@@ -32,19 +32,20 @@
             <button @click="addToDo()">Inserisci</button>
           </div>
 
-          <ul>
+          <ul v-if="lista.length > 0">
             <li
               v-for="(item , index) in lista"
               :class="item.done == true ? 'sbarrato' : ''"
               @click="change(index)"
             >
-              <span> {{item.text}} </span>
+              <span class="pointer"> {{item.text}} </span>
               <!-- fare la spesa-->
               <span>
                 <i class="far fa-times-circle" @click="removeToDo(index)"></i
               ></span>
             </li>
           </ul>
+          <h3 v-else>Non ci sono elementi nella lista</h3>
         </div>
       </main>
     </div>

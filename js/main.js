@@ -25,7 +25,9 @@ const app = new Vue ({
         },
         addToDo: function(){
             if (this.inputValue !== ''){
-                this.lista.push({text:this.inputValue, done:false});
+                this.lista.push({
+                    text:this.inputValue, done:false}
+                    );
                 this.inputValue = '';
             }
 

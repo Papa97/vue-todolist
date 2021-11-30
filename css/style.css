@@ -66,3 +66,7 @@ li i {
 li i:hover {
   color: red;
 }
+
+.pointer {
+  cursor: pointer;
+}
